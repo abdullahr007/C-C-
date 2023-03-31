@@ -1,0 +1,23 @@
+/*
+MB-213-A
+a10 p1.[c or cpp or h]
+Abdullah Rafqiue
+arafique@jacobs-university.de
+*/
+
+Part A)
+
+As we commented out ("using namespace std")
+Now compiler is showing as error as it does not
+know that we are using standard namespace and it 
+does not identity these name classes.Just by writting
+"using namespace std" or by writting "std::" as prefix 
+for all the expressions which requires this and
+this problem will be solved.
+
+Part B)
+
+There is actually nothing wrong until we reach the point where
+we are trying to reference varaible(member of that critter).
+Compiler interprets the function as standalone,"Critter" is
+reposnible to tell that it is a member function of Critter class.

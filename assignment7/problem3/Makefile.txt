@@ -1,0 +1,16 @@
+CC = gcc
+2 CFLAGS = - Wall
+3
+4 OBJ = linked_list .o use_linked_list .o
+5
+6 all : use_linked_list
+7
+8 use_linked_list : $( OBJ )
+9 $( CC ) $( CFLAGS ) -o use_linked_list $( OBJ )
+10
+11 use_linked_list .o: linked_list . h use_linked_list . c
+12
+13 linked_list .o: linked_list .h linked_list .c
+14
+15 clean :
+16 rm -f use_linked_list *. o
