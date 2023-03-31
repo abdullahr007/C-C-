@@ -1,0 +1,27 @@
+#include<stdio.h>
+
+int main()
+{
+ int n;
+ char ch;
+
+scanf("%d",&n);
+scanf("%c",&ch);
+
+get char();
+
+print(n,ch);
+
+return 0;
+}
+
+void print(int n, char ch)
+
+{
+  int N = n;
+  
+
+
+
+
+}

@@ -1,0 +1,23 @@
+#include <stdio.h> //Header file for printf() function
+#include<math.h> //Header file for pow() function
+void proddivpowinv(float a,float b,float *prod,float *div,float *pwr,float *invb) //function definition
+{
+*prod=a*b; //pointer var reflects values to original variables in main() function
+*div=a/b;
+*pwr=pow(a,b);
+*invb=1/b;
+}
+
+int main()
+{
+float a=4.0;
+float b=2.0;
+float prod,div,pwr,invb;
+proddivpowinv(a,b,&prod,&div,&pwr,&invb); //calling function, passing address to the pointer parameters
+printf("The numbers are: %f %f\n",a,b); //printing results
+printf("The product is: %f\n",prod);
+printf("The division is: %f\n",div);
+printf("a to the power b: %f\n",pwr);
+printf("The inverse of b: %f\n",invb);
+return 0;
+}
